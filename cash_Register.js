@@ -1,40 +1,44 @@
- (function (){
+ var cashRegister = (function (){
 
-  var memory = [];
-  var total = [];
+  var memory = 0;
+  var display = 0;
+  var decimalInput = true;
 
   var calcResult = function(){
-    document.getElementById("calcResult").innerHTML = total;
+    if(display !== clear){
+      document.getElementById("calcResult").innerHTML += display;
+    }
   };
 
-  var buttonOne = document.getElementById("one");
-  var buttonTwo = document.getElementById("two");
-  var buttonThree = document.getElementById("three");
-  var buttonFour = document.getElementById("four");
-  var buttonFive = document.getElementById("five");
-  var buttonSix = document.getElementById("six");
-  var buttonSeven = document.getElementById("seven");
-  var buttonEight = document.getElementById("eight");
-  var buttonNine = document.getElementById("nine");
   var clear = document.getElementById("clear");
+    clear.addEventListener("click", function(){
+      //clear display!!!
+  });
 
-  clear.addEventListener("click", function(){
-    total = "0.00";
+  var buttonOne = document.getElementById("one");
+  buttonOne.addEventListener("click", function(){
+    display = 1;
     calcResult();
   });
 
-
-
-
-  buttonSeven.addEventListener("click", function(){
-    total = 7;
+  var buttonTwo = document.getElementById("two");
+  buttonTwo.addEventListener("click", function(){
+    display = 2;
     calcResult();
   });
 
-  buttonEight.addEventListener("click", function(){
-    total = 8;
+  var buttonThree = document.getElementById("three");
+  buttonThree.addEventListener("click", function(){
+    display = 3;
     calcResult();
   });
+
+  var buttonFour = document.getElementById("four");
+  buttonFour.addEventListener("click", function(){
+    display = 4;
+    calcResult();
+  });
+
 
 
 
