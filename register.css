@@ -1,25 +1,56 @@
 h1 {
-  font-family: ;
+  font-family: monospace ;
+}
+
+#calcResult {
+  border: 2px solid thistle;
+  height: 10px;
+  width: 185px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: thistle;
+}
+
+.alignRight {
+  float: right;
 }
 
 
-body {
-  background-color:tan;
+.eachRow {
+  margin-bottom: 25px;
 }
 
-/*.box {
-  background-color: #3d4543;
-  height: 600px;
-  width: 550px;
-  border-radius: 10px;
-  position:r elative;
-  top: 80px;
-  left: 40%;
+.box {
+  display: inline;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: aquamarine;
 }
-*/
 
-.display {
-
-  top: 80px;
-  left: 40%;
+#clear {
+  padding: 10px 44px;
+  background: #73717E;
 }
+
+#depositCash {
+  padding: 10px 17px;
+  background: #73717E;
+}
+
+#withdrawCash {
+  padding: 10px;
+  background: #73717E;
+}
+
+#doubleZero {
+  padding: 10px 14.5px;
+}
+
+#dot {
+  padding: 10px 22px;
+}
+
+#equals {
+  margin-left: 167px;
+}
+
